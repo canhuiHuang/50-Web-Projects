@@ -4,6 +4,6 @@
 
 https://mmmcucumber.netlify.app
 
-## 2 - Expanding Cards
+## 2 - Progress Steps
 
 https://bachigualato.netlify.app
