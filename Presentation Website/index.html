@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Presentation Website</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "slide-1" class="slide">
+        <h1 class="title">Hello lorem</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sequi fugiat voluptas voluptates animi vero odit ad. Fugit accusantium non iusto illo alias corporis blanditiis tempora doloremque magni amet earum fugiat praesentium, quod, veritatis deserunt culpa fuga eos aliquid. Non soluta sapiente officia commodi accusantium quaerat.</p>
+        <div>
+            <a class="btn" href="#slide-2">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+    <div id = "slide-2" class="slide">
+        <h1 class="title">askldh gasisdk</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias provident similique facilis esse laborum maiores exercitationem sint dignissimos facere sequi! Nihil facilis odit tenetur numquam ratione modi voluptatum!</p>
+        <div>
+            <a class="btn btn-dark" href="#slide-1">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a class="btn" href="#slide-3">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+    <div id = "slide-3" class="slide">
+        <h1 class="title">mekajsd jijiasd</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ipsa quis modi provident labore quaerat eveniet a, nemo temporibus debitis quam quibusdam odit, veritatis, cum doloremque. Vero vel quam nihil voluptatum minus beatae rem aspernatur nostrum doloribus commodi animi cumque porro, voluptatibus suscipit? Doloribus unde autem quisquam, amet odit placeat libero ipsam numquam voluptate eligendi minima quo deserunt veniam voluptates consequuntur. Nemo tenetur eligendi perspiciatis, enim aperiam quia odio. Iure.</p>
+        <div>
+            <a class="btn btn-dark" href="#slide-2">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a class="btn" href="#slide-4">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+    <div id = "slide-4" class="slide">
+        <h1 class="title">In conclusion yes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus!</p>
+        <div>
+            <a class="btn btn-dark" href="#slide-3">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(e) {
+        if(this.hash !== '') {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                420
+            );
+        }
+    });
+</script>
+</html>
