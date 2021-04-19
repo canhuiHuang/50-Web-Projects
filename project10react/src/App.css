@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(144, 153, 194);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 4rem 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 62rem;
+}
+
+.h3 {
+  display: block;
+  color: rgb(65, 65, 65);
+  letter-spacing: 2px;
+}
+
+#joke {
+  font-size: 27px;
+  margin-bottom: 1rem;
+  line-height: 40px;
+  margin: 50px auto;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(159, 245, 231);
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(43, 44, 44);
+  color: #fff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
