@@ -1,30 +1,40 @@
+<!-- Made by Boku Dev -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Key Codes Events</title>
   </head>
   <body>
     <div id="insert">
-      <div class="key">
-        a
-        <small>event.keyCode</small>
-      </div>
-      <div class="key">
-        65
-        <small>event.keyCode</small>
-      </div>
-      <div class="key">
-        keyA
-        <small>event.code</small>
-      </div>
-      <div class="key">
-        Press any key to get the keyCode
-        <small>event.keyCode</small>
+      <div class="result">
+        <div id='d' class="key">
+          Press any key to get the keyCode
+        </div>
       </div>
     </div>
+    <div id="bruh"></div>
+    <script>
+      function copyCode() {
+        var copyText = document.getElementById("xd").textContent;
+        const aber = document.createElement('input');
+        console.log(copyText)
+        document.body.appendChild(aber);
+        aber.value = copyText;
+        aber.select();
+        aber.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        document.getElementById('bruh').innerHTML = `<i class="far fa-copy"></i> Key code "${aber.value}"' copied <i class="far fa-copy"></i>`;
+        setTimeout(() => {
+          document.getElementById('bruh').innerHTML = '';
+        }, 2420)
+        aber.remove();
+      }
+      </script>
     <script src="script.js"></script>
   </body>
 </html>
