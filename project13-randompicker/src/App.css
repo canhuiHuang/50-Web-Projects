@@ -40,6 +40,9 @@ h3 {
   border-radius: 5px;
   font-size: 1.1rem;
 }
+.choices-input:focus {
+  outline: none;
+}
 
 .choice {
   background-color: rgb(255, 241, 196);
