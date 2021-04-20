@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: rgb(218, 218, 218);
+  font-size: 1.3rem;
+}
+#enter-text {
+  color: rgb(243, 237, 211);
+  font-size: 1.5rem;
+  padding: 0.1rem 0.3rem;
+}
+#enter-text:hover {
+  background-color: rgb(235, 235, 235);
+  color: #282c34;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.1rem 0.3rem;
+  transform: scale(1.02);
+}
+
+.choices-input {
+  margin-top: 1.1rem;
+  margin-bottom: 0.85rem;
+  min-width: 510px;
+  min-height: 120px;
+  border-radius: 5px;
+}
+
+.choice {
+  background-color: rgb(255, 241, 196);
+  padding: 0.7rem 1.3rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  transition: background-color 0.1s ease-in-out;
+  transition: opacity 0.37s ease-in-out;
+  cursor: default;
+}
+.choice:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.choices {
+  display: inline-flex;
+  max-width: 510px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.enRuleta {
+  background-color: rgb(236, 111, 95);
+  transform: scale(1.02);
+  color: rgb(255, 255, 255);
+  padding: 0.7rem 1.3rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+@media (max-width: 550px) {
+  .choices-input {
+    margin-top: 1.1rem;
+    margin-bottom: 0.85rem;
+    min-width: 480px;
+    min-height: 120px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .choices-input {
+    margin-top: 1.1rem;
+    margin-bottom: 0.85rem;
+    min-width: 320px;
+    min-height: 120px;
+    border-radius: 5px;
+  }
+
+  .xd {
+    display: none;
+  }
+}
