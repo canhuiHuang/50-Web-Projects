@@ -12,7 +12,9 @@ function App() {
       
       textarea.disabled = true;
       // random Pick
-      let intervalTime = 150 + Math.floor(Math.random()*75);
+      let intervalTime = 100 + Math.floor(Math.random()*101) - (displayedChoices.length * 5 < 100 ? displayedChoices.length * 5 : 95);
+      const duration = 1500 + 1000*(displayedChoices.length % 10);
+
       const ruleta = () => {
         //Limpiar enRuleta clase de todas las choices.
         displayedChoices.forEach(choice => {
@@ -33,7 +35,7 @@ function App() {
       let i = 0;
       let tid = setInterval(ruleta, intervalTime);
 
-      const duration = 4000 + Math.random()*2501;
+      
       setTimeout(terminarRuleta, duration);
     }
     
